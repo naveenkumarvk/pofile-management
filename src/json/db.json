@@ -42,9 +42,16 @@
       "name": "John",
       "jobs": [
         {
-          "id": 3,
-          "name": "job3",
-          "color": "blue",
+          "id": 5,
+          "name": "job5",
+          "color": "orange",
+          "selectedMinutes": "",
+          "selectedHours": ""
+        },
+        {
+          "id": 1,
+          "name": "job1",
+          "color": "violet",
           "selectedMinutes": "",
           "selectedHours": ""
         },
@@ -56,32 +63,25 @@
           "selectedHours": ""
         },
         {
-          "id": 5,
-          "name": "job5",
-          "color": "orange",
-          "selectedMinutes": "",
-          "selectedHours": ""
-        },
-        {
-          "id": 1,
-          "name": "job1",
-          "color": "violet",
+          "id": 3,
+          "name": "job3",
+          "color": "blue",
           "selectedMinutes": 0,
           "selectedHours": 0,
-          "selectedEndHours": 1,
+          "selectedEndHours": 5,
           "selectedEndMinutes": 0,
           "fromDate": "2010-05-03T18:30:00.000Z",
-          "toDate": "2010-05-03T19:30:00.000Z"
+          "toDate": "2010-05-03T23:30:00.000Z"
         },
         {
           "id": 2,
           "name": "job2",
           "color": "green",
           "selectedMinutes": 0,
-          "selectedHours": 1,
+          "selectedHours": 5,
           "selectedEndHours": 23,
           "selectedEndMinutes": 59,
-          "fromDate": "2010-05-03T19:30:00.000Z",
+          "fromDate": "2010-05-03T23:30:00.000Z",
           "toDate": "2010-05-04T18:29:00.000Z"
         }
       ],
@@ -118,20 +118,20 @@
           "color": "violet",
           "selectedMinutes": 0,
           "selectedHours": 0,
-          "selectedEndHours": 1,
+          "selectedEndHours": 5,
           "selectedEndMinutes": 0,
           "fromDate": "2010-05-03T18:30:00.000Z",
-          "toDate": "2010-05-03T19:30:00.000Z"
+          "toDate": "2010-05-03T23:30:00.000Z"
         },
         {
           "id": 2,
           "name": "job2",
           "color": "green",
           "selectedMinutes": 0,
-          "selectedHours": 1,
+          "selectedHours": 5,
           "selectedEndHours": 23,
           "selectedEndMinutes": 59,
-          "fromDate": "2010-05-03T19:30:00.000Z",
+          "fromDate": "2010-05-03T23:30:00.000Z",
           "toDate": "2010-05-04T18:29:00.000Z"
         }
       ],

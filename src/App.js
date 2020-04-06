@@ -330,7 +330,12 @@ export class Main extends React.Component {
   };
 
   render() {
-    const { selectedJobId, users, selectedUserObject,enableJobSelector } = this.state;
+    const {
+      selectedJobId,
+      users,
+      selectedUserObject,
+      enableJobSelector
+    } = this.state;
 
     return (
       <div className="App">
@@ -338,7 +343,14 @@ export class Main extends React.Component {
           {selectedUserObject.name}
         </div>
         <div className="flex-row">
-          <div class="flex-container-1" onClick = {()=>{this.setState({enableJobSelector : !enableJobSelector})}}>Choose Job</div>
+          <div
+            class="flex-container-1"
+            onClick={() => {
+              this.setState({ enableJobSelector: !enableJobSelector });
+            }}
+          >
+            Choose Job
+          </div>
           <JobPicker renderBackGroundColor={this.renderBackGroundColor} />
         </div>
         {enableJobSelector && (
@@ -346,7 +358,7 @@ export class Main extends React.Component {
             <div className="job-title">Select Job</div>
             <div className="column-direction fitty-percent">
               <div
-              style={{backgroundColor:"violet"}}
+                style={{ backgroundColor: "violet" }}
                 name="selectedJobId"
                 className={`pointer jobs ${
                   selectedJobId === 1 ? "job-number" : ""
@@ -355,15 +367,14 @@ export class Main extends React.Component {
                   this.handleClick(e, 1);
                 }}
               >
-                Job 1
-                <div></div>
+                Job 1<div></div>
               </div>
               <div
                 name="selectedJobId"
                 className={`pointer jobs ${
                   selectedJobId === 2 ? "job-number" : ""
                 }`}
-                style={{backgroundColor:"green"}}
+                style={{ backgroundColor: "green" }}
                 onClick={e => {
                   this.handleClick(e, 2);
                 }}
@@ -378,7 +389,7 @@ export class Main extends React.Component {
                 onClick={e => {
                   this.handleClick(e, 3);
                 }}
-                style={{backgroundColor:"blue"}}
+                style={{ backgroundColor: "blue" }}
               >
                 Job 3
               </div>
@@ -390,7 +401,7 @@ export class Main extends React.Component {
                 onClick={e => {
                   this.handleClick(e, 4);
                 }}
-                style={{backgroundColor:"yellow"}}
+                style={{ backgroundColor: "yellow" }}
               >
                 Job 4
               </div>
@@ -402,7 +413,7 @@ export class Main extends React.Component {
                 onClick={e => {
                   this.handleClick(e, 5);
                 }}
-                style={{backgroundColor:"orange"}}
+                style={{ backgroundColor: "orange" }}
               >
                 Job 5
               </div>
