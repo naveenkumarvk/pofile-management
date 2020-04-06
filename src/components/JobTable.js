@@ -4,6 +4,7 @@ import "../App.css";
 const JobTable = ({ users, loadIntial }) => {
   return (
     <div style={{ position: "absolute", bottom: 0 }}>
+     <h4>Click on name select job person</h4>
       <table>
         <tr>
           <th>Name</th>

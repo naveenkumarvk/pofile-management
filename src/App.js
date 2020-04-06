@@ -346,6 +346,7 @@ export class Main extends React.Component {
             <div className="job-title">Select Job</div>
             <div className="column-direction fitty-percent">
               <div
+              style={{backgroundColor:"violet"}}
                 name="selectedJobId"
                 className={`pointer jobs ${
                   selectedJobId === 1 ? "job-number" : ""
@@ -355,12 +356,14 @@ export class Main extends React.Component {
                 }}
               >
                 Job 1
+                <div></div>
               </div>
               <div
                 name="selectedJobId"
                 className={`pointer jobs ${
                   selectedJobId === 2 ? "job-number" : ""
                 }`}
+                style={{backgroundColor:"green"}}
                 onClick={e => {
                   this.handleClick(e, 2);
                 }}
@@ -375,6 +378,7 @@ export class Main extends React.Component {
                 onClick={e => {
                   this.handleClick(e, 3);
                 }}
+                style={{backgroundColor:"blue"}}
               >
                 Job 3
               </div>
@@ -386,6 +390,7 @@ export class Main extends React.Component {
                 onClick={e => {
                   this.handleClick(e, 4);
                 }}
+                style={{backgroundColor:"yellow"}}
               >
                 Job 4
               </div>
@@ -397,6 +402,7 @@ export class Main extends React.Component {
                 onClick={e => {
                   this.handleClick(e, 5);
                 }}
+                style={{backgroundColor:"orange"}}
               >
                 Job 5
               </div>
